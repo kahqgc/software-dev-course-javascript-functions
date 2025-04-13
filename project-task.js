@@ -72,3 +72,32 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+//Script 1
+function greet(name){
+   console.log(`Welcome, ${name} !`);
+}
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
+ //Script 2
+ function numSum(num1, num2){
+   return num1+num2;
+}
+console.log("The sum of 5 and 10 is " + numSum(5,10));
+
+//Script 3
+function numProduct(num1, num2){
+   return num1*num2;
+}
+console.log("The product of 5 and 10 is " + numProduct(5,10));
+
+//Script 4
+
+function printNames(names){
+   console.log("Names in the list");
+   for (let i = 0; i < names.length; i++) {
+      console.log(names[i]);
+   }  
+}
+printNames(["Alice", "Bob", "Charlie"]);
