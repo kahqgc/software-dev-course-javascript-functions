@@ -37,14 +37,33 @@ console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
 
+function greet(name) {
+    console.log(`Welcome, ${name} !`);
+}
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+
+
 // Script 2 - Sum calculation
 let num1 = 5, num2 = 10;
 let sum = num1 + num2;
 console.log("The sum of 5 and 10 is " + sum);
 
+function sumNum(num1, num2){
+    return num1+num2;
+}
+console.log("The sum of 5 and 10 is " + sumNum(5,10));
+
+
 // Script 3 - Product calculation
 let product = num1 * num2;
 console.log("The product of 5 and 10 is " + product);
+
+function prodNum(num1,num2){
+    return num1*num2;
+}
+console.log("The product of 5 and 10 is " + prodNum(5,10));
 
 // Script 4 - Print names from a list
 let names = ["Alice", "Bob", "Charlie"];
@@ -52,6 +71,16 @@ console.log("Names in the list:");
 for (let i = 0; i < names.length; i++) {
    console.log(names[i]);
 }
+
+function nameArr(names){
+    console.log("Names in the list:")
+    for (let i=0; i<names.length; i++){
+        console.log(names[i]);
+    }
+}
+
+nameArr(["Alice", "Bob", "Charlie"]);
+
 
 /*
 ===========================================
@@ -70,34 +99,3 @@ for (let i = 0; i < names.length; i++) {
    - Replace repeated code with meaningful function calls
    - Keep your code clean, readable, and easy to maintain
 */
-
-// ✅ Your refactored code goes below this line!
-//Script 1
-function greet(name) {
-   console.log(`Welcome, ${name} !`);
-}
-greet("Alice");
-greet("Bob");
-greet("Charlie");
-
-//Script 2
-function numSum(num1, num2) {
-   return num1 + num2;
-}
-console.log("The sum of 5 and 10 is " + numSum(5, 10));
-
-//Script 3
-function numProduct(num1, num2) {
-   return num1 * num2;
-}
-console.log("The product of 5 and 10 is " + numProduct(5, 10));
-
-//Script 4
-
-function printNames(names) {
-   console.log("Names in the list");
-   for (let i = 0; i < names.length; i++) {
-      console.log(names[i]);
-   }
-}
-printNames(["Alice", "Bob", "Charlie"]);

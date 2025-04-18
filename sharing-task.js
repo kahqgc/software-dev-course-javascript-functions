@@ -51,6 +51,17 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. If so, apply a 10% discount.
 // 4. Return the final total.
 
+function appliesDiscount(person,cost){
+    let total= person*cost;
+    if (person>=100){
+       console.log(total-total*0.1);
+    }
+else {
+    console.log(total);
+}
+}
+appliesDiscount(50,25);
+
 
 // ============================================
 // 🧩 Task 3: Validate Email
@@ -89,3 +100,32 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+//task1
+function generateBadge(name,role){
+    console.log(`Name:${name}, Role:${role}`);
+
+}
+generateBadge("Karen", "CEO");
+
+//task2
+
+function appliesDiscount(person,cost){
+    let total= person*cost;
+    if (person>=100){
+       console.log(total-total*0.1);
+    }
+else {
+    console.log(total);
+}
+}
+appliesDiscount(50,25);
+
+
+//task3
+function validEmail(email){
+    return email.includes("@")&& email.includes(".");
+}
+
+console.log(validEmail("hi@hi.com"));
+console.log(validEmail("anderson"));
